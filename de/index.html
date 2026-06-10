@@ -199,8 +199,8 @@ p {
 
 .home-header-grid {
   display: grid;
-  grid-template-columns: 1.35fr 0.65fr;
-  gap: 56px;
+  grid-template-columns: 1fr 340px;
+  gap: 60px;
   align-items: start;
 }
 
@@ -216,16 +216,18 @@ p {
   font-size: 1.1rem;
   margin-top: 14px;
 }
+  
+.home-portrait {
+  width: 340px;
+  max-width: 340px;
+  justify-self: end;
+  padding-top: 10px;
+}
 
 .home-portrait img {
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  border-radius: 4px;
-  border: 8px solid var(--color-border);
-}
-  .home-portrait {
-  padding-top: 30px;
 }
 /* INTRO */
 
