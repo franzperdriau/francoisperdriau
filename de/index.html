@@ -1,0 +1,926 @@
+<!-- HOME PAGE – FRANÇOIS PERDRIAU -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>François Perdriau | Kulturprojektentwickler, Künstlerischer Leiter & Kulturunternehmer</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+    
+  <meta name="description" content="François Perdriau is a Berlin-based cultural project developer, artistic director, producer and musician specialised in European cooperation, arts education, cultural heritage and international cultural projects.">
+
+  <meta name="keywords" content="François Perdriau, Cultural Project Developer, Cultural Project Manager, Artistic Director, Cultural Entrepreneur, Producer, Creative Europe, Arts Education, Cultural Heritage, Berlin, Jazz Heritage">
+
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"François Perdriau",
+  "jobTitle":"Cultural Project Developer",
+  "description":"Cultural project developer, artistic director, producer and musician specialised in cultural heritage, arts education, European cooperation and international cultural projects.",
+  "url":"https://www.francoisperdriau.com",
+
+  "image":"https://www.francoisperdriau.com/images/portrait.jpg",
+
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Berlin",
+    "addressCountry":"Germany"
+  },
+
+  "knowsAbout":[
+    "Cultural Project Development",
+    "Artistic Direction",
+    "Arts Education",
+    "European Cooperation",
+    "Creative Europe",
+    "Cultural Heritage",
+    "Festival Management",
+    "Jazz Heritage",
+    "Cultural Production",
+    "International Cultural Partnerships"
+  ],
+
+  "sameAs":[
+    "https://www.linkedin.com/in/françois-perdriau-5b003a1bb",
+    "https://syncopation.de/",
+    "https://areyousyncopated.de/",
+    "https://swingingeurope.eu/",
+    "https://www.thejunglejazzband.com/",
+    "https://www.nadanadi.de/"
+  ]
+}
+</script>
+
+<style>
+:root {
+  --color-bg: #F7F2EA;
+  --color-bg-dark: #151515;
+  --color-primary: #8B2F2F;
+  --color-secondary: #C49A4A;
+  --color-accent: #2F5D62;
+  --color-text: #1E1E1E;
+  --color-text-light: #F7F2EA;
+  --color-muted: #6F6A63;
+  --color-border: #D8CBB8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+.home-page {
+  background: var(--color-bg);
+}
+
+.home-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 84px 0;
+}
+
+.eyebrow {
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(3.4rem, 7vw, 6.8rem);
+  color: var(--color-primary);
+  max-width: 820px;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  color: var(--color-text);
+  max-width: 900px;
+  margin-bottom: 28px;
+}
+
+h3 {
+  font-size: 1.35rem;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 1.08rem;
+  max-width: 780px;
+  margin: 0 0 18px;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  border: 1px solid var(--color-primary);
+}
+
+.btn-secondary {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* HEADER */
+
+.language-switcher {
+  display: flex;
+  gap: 14px;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.language-switcher a {
+  text-decoration: none;
+  color: var(--color-muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.language-switcher a:hover,
+.language-switcher a.active {
+  color: var(--color-secondary);
+}
+
+.home-header {
+  padding: 80px 0 64px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.home-header-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.home-subtitle {
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  color: var(--color-text);
+  margin-top: 28px;
+  max-width: 780px;
+}
+
+.location {
+  color: var(--color-muted);
+  font-size: 1.1rem;
+  margin-top: 14px;
+}
+
+.home-portrait img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 8px solid var(--color-border);
+}
+  .home-portrait {
+  padding-top: 30px;
+}
+/* INTRO */
+
+.intro-text {
+  font-size: 1.25rem;
+  max-width: 900px;
+}
+
+/* STATS */
+
+.stats-section {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 28px;
+}
+
+.stat-item {
+  padding-right: 18px;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.7rem;
+  line-height: 1;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+/* CARDS */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid var(--color-border);
+  padding: 28px;
+  border-radius: 6px;
+}
+
+.card p {
+  color: var(--color-muted);
+}
+
+/* PROJECTS */
+
+.projects-section {
+  background: var(--color-bg-dark);
+  color: var(--color-text-light);
+  padding: 84px 0;
+}
+
+.projects-section h2 {
+  color: var(--color-text-light);
+}
+
+.projects-section .card {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(216, 203, 184, 0.25);
+}
+
+.projects-section h3 {
+  color: var(--color-secondary);
+}
+
+.projects-section p {
+  color: rgba(247, 242, 234, 0.78);
+}
+
+.project-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.project-link h3::after {
+  content: " ↗";
+  font-size: 0.85em;
+  color: var(--color-secondary);
+}
+
+/* PARTNERS */
+
+.partners-section {
+  background: #EFE6D8;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.logo-item {
+  min-height: 110px;
+  padding: 22px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: rgba(255,255,255,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.logo-item img {
+  max-width: 100%;
+  max-height: 58px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.85;
+  transition: all 0.25s ease;
+}
+
+.logo-item:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+.image-section {
+  padding: 30px 0 70px;
+}
+
+.feature-image {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+  border: 1px solid var(--color-border);
+}
+
+.image-caption {
+  margin-top: 16px;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  max-width: 900px;
+}
+/* IMAGE SECTIONS */
+
+.image-section {
+  padding: 40px 0 80px;
+}
+
+.image-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.image-wrapper-small {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feature-image {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.image-caption {
+  text-align: center;
+  margin-top: 16px;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* CONTACT */
+
+.contact-section {
+  background: var(--color-accent);
+  color: var(--color-text-light);
+}
+
+.contact-section h2 {
+  color: var(--color-text-light);
+}
+
+.contact-section p {
+  color: rgba(247, 242, 234, 0.86);
+}
+
+.contact-section .btn-primary {
+  background: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-bg-dark);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.site-footer {
+  background: var(--color-bg-dark);
+  color: var(--color-text-light);
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-brand h3 {
+  color: var(--color-secondary);
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  margin: 0;
+  color: rgba(247,242,234,0.75);
+  font-size: 0.95rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer-links a:not(.linkedin-btn) {
+  color: var(--color-text-light);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+
+}
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 20px;
+
+  border: 1px solid var(--color-secondary);
+
+  background: transparent;
+
+  color: var(--color-secondary);
+
+  text-decoration: none;
+
+  border-radius: 4px;
+
+  font-family: Arial, sans-serif;
+
+  transition: all 0.25s ease;
+}
+
+.linkedin-btn:hover {
+  background: var(--color-secondary);
+  color: var(--color-bg-dark);
+  transform: translateY(-2px);
+}
+
+.linkedin-btn svg {
+  width: 18px;
+  height: 18px;
+}
+  
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .home-header-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-portrait {
+    max-width: 340px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="home-page" id="top">
+
+  <!-- HERO / HEADER -->
+  <header class="home-header">
+    <div class="home-container home-header-grid">
+
+      <div class="home-intro">
+        <div class="language-switcher">
+  <a href="../index.html">EN</a>
+  <a href="./index.html" class="active">DE</a>
+</div>
+        <p class="eyebrow">François Perdriau</p>
+
+        <h1>
+          Kulturprojektentwickler, Künstlerischer Leiter und Kulturunternehmer
+        </h1>
+
+        <p class="home-subtitle">
+          Autor · Produzent · Musiker
+        </p>
+
+        <p class="home-subtitle">	
+          Entwicklung von Kulturprojekten, europäischen Kooperationsprogrammen, Bildungsinitiativen und künstlerischen Produktionen in Europa.
+        </p>
+
+        <p class="location">Berlin, Deutschland</p>
+
+        <div class="btn-row">
+          <a href="#projects" class="btn btn-primary">Ausgewählte Projekte</a>
+           <a href="#services" class="btn btn-primary">Leistung</a>
+          <a href="#contact" class="btn btn-secondary">Kontact</a>
+        </div>
+      </div>
+
+      <div class="home-portrait">
+        <img src="portrait.PNG" alt="François Perdriau, Cultural Project Developer and Artistic Director based in Berlin">
+      </div>
+
+    </div>
+  </header>
+
+  <!-- INTRODUCTION -->
+  <section class="intro-section">
+    <div class="home-container">
+      <p class="eyebrow">Profil</p>
+
+      <h2>
+        Entwicklung von Kulturprojekten mit künstlerischer Substanz, strategischer Klarheit und internationaler Reichweite.
+      </h2>
+
+      <p class="intro-text">
+        François Perdriau ist ein in Berlin ansässiger Kulturprojektentwickler, künstlerischer Leiter, Produzent und Musiker mit Schwerpunkt auf Kulturprojektmanagement, europäischen Kooperationsprogrammen, kultureller Bildung und Jazz-Kulturerbe.
+      </p>
+
+      <p>
+        Mit Initiativen wie Syncopation Society, Are You Syncopated?!, Swinging Europe Network, Backbeat Jazz Academy, Lilly & Elisabeth und The Jungle Jazz Band entwickelt er Projekte, die Künstler, Institutionen, Publikum und Bildungspartner in Europa miteinander verbinden.
+      </p>
+    </div>
+  </section>
+
+  <!-- KEY FIGURES -->
+<section class="image-section">
+  <div class="home-container">
+
+    <div class="image-wrapper">
+
+      <img
+        src="WORKSHOP_1.jpg"
+        alt="François Perdriau leading an international cultural workshop"
+        class="feature-image">
+
+      <p class="image-caption">
+        Gestaltung internationaler künstlerischer Begegnungen, kultureller Bildung und europäischer Kooperationsprojekte.
+      </p>
+
+    </div>
+
+<section class="stats-section">
+  <div class="home-container">
+
+    <p class="eyebrow">Kennzahlen</p>
+
+    <div class="stats-grid">
+
+      <div class="stat-item">
+        <span class="stat-number">20+</span>
+        Jahre Erfahrung
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number">13</span>
+        europäische Partner
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number">9</span>
+        verbundene Länder
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number">500+</span>
+        Konzerte und Produktionen
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number">✓</span>
+        Projekte unterstützt durch Creative Europe, Kultur macht stark! und den Berliner Senat
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- SERVICES -->
+  <section id="services">
+  <section class="services-section">
+    <div class="home-container">
+      <p class="eyebrow">Arbeitsfelder</p>
+
+      <h2>Kompetenzbereiche</h2>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <h3>Kulturprojektentwicklung & Projektmanagement</h3>
+          <p>
+            Konzeptentwicklung, strategische Positionierung, Förderstrukturen, Partnerkoordination und langfristige Projektplanung.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Künstlerische Leitung & Produktion</h3>
+          <p>
+            Entwicklung kohärenter künstlerischer Formate, Leitung kreativer Teams und Gestaltung von Projekten mit einer klaren kulturellen Identität.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Europäische Zusammenarbeit & Creative-Europe-Projekte</h3>
+          <p>
+            Aufbau von Netzwerken zwischen Künstlern, Festivals, Institutionen und Bildungsorganisationen über Landesgrenzen hinweg.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Kulturelle Bildung & Vermittlung</h3>
+          <p>
+            Entwicklung von Bildungsformaten, die Musik, Geschichte, Erzählung und gesellschaftlichen Dialog miteinander verbinden.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO SECTION -->
+  <section class="seo-section">
+    <div class="home-container">
+
+      <p class="eyebrow">Internationale Kulturarbeit</p>
+
+      <h2>
+        Kulturprojektentwicklung und internationale kulturelle Zusammenarbeit.
+      </h2>
+
+      <p>
+       François Perdriau entwickelt Kulturprojekte in den Bereichen Musik, kulturelle Bildung, Kulturerbe, Publikumsentwicklung und internationale Zusammenarbeit.
+      </p>
+
+      <p>
+        François Perdriau entwickelt Kulturprojekte in den Bereichen Musik,
+        kulturelle Bildung, Kulturerbe, Publikumsentwicklung und internationale Zusammenarbeit.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- SELECTED PROJECTS -->
+<section class="image-section">
+  <div class="home-container">
+
+    <div class="image-wrapper">
+
+      <img
+        src="L&E.jpeg"
+        alt="Lilly and Elisabeth live performance combining music, storytelling and cultural mediation"
+        class="feature-image">
+
+      <p class="image-caption">
+        Lilly & Elisabeth, ein transdisziplinäres Projekt, das Hörspiel, Live-Performance, Bildung und Kulturgeschichte verbindet.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+  <section class="projects-section" id="projects">
+    <div class="home-container">
+      <p class="eyebrow">Ausgewählte Projekte</p>
+
+      <h2>Projekte als Nachweis von Expertise</h2>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <a href="https://syncopation.de/" target="_blank" rel="noopener" class="project-link">
+            <h3>Syncopation Society</h3>
+            <p>
+              Kulturproduktionsstruktur für Festivals, Bildungsprogramme, künstlerische Projekte und internationale Partnerschaften.
+            </p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="https://areyousyncopated.de/" target="_blank" rel="noopener" class="project-link">
+            <h3>Are You Syncopated?!</h3>
+            <p>
+              Internationales Festival für Early Jazz, Kulturerbe, künstlerischen Austausch und Bildung mit einem Editionsbudget von über 60.000 €.
+            </p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="https://swingingeurope.eu/" target="_blank" rel="noopener" class="project-link">
+            <h3>Swinging Europe Network</h3>
+            <p>
+              Europäisches Kooperationsnetzwerk, gefördert durch Creative Europe, mit 13 Kulturpartnern aus 9 Ländern.
+            </p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="https://syncopation.de/backbeat-jazz-academy/" target="_blank" rel="noopener" class="project-link">
+            <h3>Backbeat Jazz Academy</h3>
+            <p>
+              Kulturelles Bildungsprogramm, gefördert durch Kultur macht stark!, das jungen Menschen Zugang zu Musik und kultureller Teilhabe ermöglicht.
+            </p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="https://bwlnk.com/9783911421225" target="_blank" rel="noopener" class="project-link">
+            <h3>Lilly & Elisabeth</h3>
+            <p>
+              Transdisziplinäres Projekt, das Hörspiel, Live-Performance, Musik, Bildung und die Auseinandersetzung mit Rassismus und Kulturgeschichte verbindet.
+            </p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="https://www.thejunglejazzband.com/" target="_blank" rel="noopener" class="project-link">
+            <h3>The Jungle Jazz Band</h3>
+            <p>
+              International tourendes Ensemble für Early Jazz, das historisches Wissen, starke Bühnenpräsenz und europäische Festivalerfahrung verbindet.
+            </p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="https://www.nadanadi.de/" target="_blank" rel="noopener" class="project-link">
+            <h3>Nadanadi Studio</h3>
+            <p>
+              Berliner Aufnahme- und Produktionsstudio mit Schwerpunkt auf akustischer Musik, Kulturerbe-Projekten und internationalen Kollaborationen.
+            </p>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+<section class="image-section">
+  <div class="home-container">
+
+    <div class="image-wrapper-small">
+
+      <img
+        src="SSO.jpeg"
+        alt="Syncopation Society Orchestra performing at a large cultural event"
+        class="feature-image">
+
+      <p class="image-caption">
+        Großformatige künstlerische Produktionen, Festivalprogrammierung und Publikumsentwicklung durch Live-Kulturveranstaltungen.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+  <section class="partners-section">
+    <div class="home-container">
+      <p class="eyebrow">Partner & Förderung</p>
+
+      <h2>
+        Projekte unterstützt durch Kulturinstitutionen, europäische Programme und künstlerische Partner.
+      </h2>
+
+      <p>
+        Die Projekte von François Perdriau wurden durch europäische, nationale und lokale Kulturprogramme gefördert und in Zusammenarbeit mit Festivals, Theatern, Bildungseinrichtungen und unabhängigen Kulturorganisationen entwickelt.
+      </p>
+
+      <div class="logo-grid">
+
+        <a href="https://culture.ec.europa.eu/creative-europe" target="_blank" rel="noopener" class="logo-item">
+          <img src="logo-creative-europe.png" alt="Creative Europe">
+        </a>
+
+        <a href="https://www.buendnisse-fuer-bildung.de/buendnissefuerbildung/de/foerderung/foerderung_node.html" target="_blank" rel="noopener" class="logo-item">
+          <img src="logo-kultur-macht-stark.png" alt="Kultur macht stark!">
+        </a>
+
+        <a href="https://lauscherlounge.de/" target="_blank" rel="noopener" class="logo-item">
+          <img src="logo-lauscherlounge.png" alt="Lauscherlounge">
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="home-container">
+
+      <p class="eyebrow">Kontact</p>
+
+      <h2>
+        Für Partnerschaften, Kulturprojekte und künstlerische Leitung.
+      </h2>
+
+      <p>
+        Verfügbar für ausgewählte Kooperationen, Projektentwicklung, Beratungsaufträge, künstlerische Leitung und internationale Kulturpartnerschaften.
+      </p>
+
+      <div class="btn-row">
+        <a href="mailto:franz.perdriau@gmail.com" class="btn btn-primary">
+          Kulturprojekt besprechen
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="home-container">
+
+      <div class="footer-content">
+
+        <div class="footer-brand">
+          <h3>François Perdriau</h3>
+          <p>
+            Kulturprojektentwickler, Künstlerischer Leiter, Produzent
+          </p>
+        </div>
+
+       <div class="footer-links">
+
+<a href="https://www.linkedin.com/in/françois-perdriau-5b003a1bb"
+   target="_blank"
+   rel="noopener"
+   class="linkedin-btn">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 24 24"
+       fill="currentColor"
+       aria-hidden="true"
+       width="18"
+       height="18">
+
+    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM0.5 8h4V24h-4V8zm7 0h3.8v2.2h.1c.5-.9 1.9-2.2 4-2.2 4.3 0 5.1 2.8 5.1 6.5V24h-4v-8.4c0-2-.04-4.5-2.8-4.5-2.8 0-3.2 2.1-3.2 4.4V24h-4V8z"/>
+  </svg>
+
+  LinkedIn
+
+</a>
+  <a href="./presskit.html">Press Kit</a>
+
+  <a href="./impressum.html">Impressum</a>
+
+  <a href="./datenschutzerklaerung.html">Datenschutz</a>
+
+  <a href="mailto:franz.perdriau@gmail.com">Email</a>
+
+  <a href="#top">Zurück nach oben ↑</a>
+
+</div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</main>
+
+</body>
+</html>
