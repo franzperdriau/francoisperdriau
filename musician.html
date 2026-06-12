@@ -96,20 +96,25 @@
   background: #F7F2EA;
 }
 
-.musician-grid {
+   .musician-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 320px 1fr;
+  gap: 60px;
   align-items: center;
 }
 
 .musician-image {
-  max-width: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .musician-image img {
   width: 100%;
+  max-width: 300px;
   border-radius: 12px;
+  border: 8px solid #D8CBB8;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
   display: block;
 }
 
