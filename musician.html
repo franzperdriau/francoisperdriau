@@ -1,1 +1,467 @@
+<!-- ========================================= -->
+<!-- MUSICIAN COMPOSER PAGE -->
+<!-- ========================================= -->
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Musician Composer | François Perdriau</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+/* ==========================================
+   MUSICIAN & COMPOSER PAGE
+========================================== */
+
+.musician-page {
+  background: #F7F2EA;
+  color: #1E1E1E;
+}
+
+/* HERO */
+
+.musician-hero {
+  padding: 100px 0 80px;
+  background: #F7F2EA;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: #C49A4A;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.back-link:hover {
+  opacity: 0.7;
+}
+
+.musician-hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.hero-title {
+  font-family: Georgia, serif;
+  color: #8B2F2F;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  margin-bottom: 60px;
+}
+
+.hero-subtitle {
+  color: #C49A4A;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 25px;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+.hero-image {
+  max-width: 380px;
+  justify-self: center;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 12px;
+  border: 8px solid #D8CBB8;
+  display: block;
+}
+
+/* MUSICIAN SECTION */
+
+.musician-section {
+  padding: 90px 0;
+  background: #F7F2EA;
+}
+
+.musician-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.musician-image {
+  max-width: 420px;
+}
+
+.musician-image img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.musician-content h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #8B2F2F;
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+.musician-content p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* LINKS */
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.project-links a {
+  text-decoration: none;
+  padding: 12px 18px;
+  border: 1px solid #8B2F2F;
+  border-radius: 999px;
+  color: #8B2F2F;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+  background: #8B2F2F;
+  color: white;
+}
+
+/* COMPOSITIONS */
+
+.compositions-section {
+  padding: 100px 0;
+  background: #F7F2EA;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-header h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.5rem;
+  color: #8B2F2F;
+  margin-bottom: 20px;
+}
+
+.section-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.composition-card {
+  background: #FFFDF8;
+  border: 1px solid #D8CBB8;
+  border-radius: 18px;
+  padding: 35px;
+  margin-bottom: 40px;
+}
+
+.composition-card.featured {
+  border-left: 6px solid #C49A4A;
+}
+
+.composition-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #8B2F2F;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.composition-meta {
+  color: #C49A4A;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.composition-card p {
+  line-height: 1.8;
+}
+
+.soundcloud-player {
+  margin-top: 25px;
+}
+
+.playlist-player iframe {
+  height: 450px;
+}
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .musician-hero-grid,
+  .musician-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-image,
+  .musician-image {
+    max-width: 100%;
+  }
+
+  .musician-hero h1 {
+    font-size: 4rem;
+  }
+
+  .musician-content h2,
+  .section-header h2 {
+    font-size: 2.4rem;
+  }
+}
+  </style>
+</head>
+
+<body class="musician-page">
+
+  <!-- HERO -->
+
+  <section class="musician-hero">
+
+  <div class="home-container">
+
+    <a href="index.html" class="back-link">
+      ← Back to Main Page
+    </a>
+
+    <h1 class="hero-title">Musician & Composer</h1>
+
+    <div class="musician-hero-grid">
+
+      <div class="hero-content">
+
+        <p class="hero-subtitle">
+          Multi-instrumentalist, composer and musical collaborator based in Berlin.
+        </p>
+
+        <p class="hero-text">
+          François Perdriau’s musical work moves between performance,
+          recording and original composition. As a drummer, he performs with
+          The Jungle Jazz Band and the Syncopation Society Orchestra, combining
+          a deep knowledge of early jazz with a contemporary artistic approach.
+          As an electric bass and double bass player, he also performs with
+          Antoine Villoutreix.
+        </p>
+
+        <p class="hero-text">
+          Alongside his work as a performer, he writes music for songs,
+          voices and narrative projects, including compositions for Meschiya
+          Lake, songs with Antoine Villoutreix, the main theme of
+          <em>Lilly & Elisabeth</em>, and recent image-inspired musical
+          sketches.
+        </p>
+
+      </div>
+
+      <div class="hero-image">
+        <img src="SCENE.jpg" alt="François Perdriau performing live on drums">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- MUSICIAN -->
+
+  <section class="musician-section">
+    <div class="home-container">
+
+      <div class="musician-grid">
+
+        <div class="musician-image">
+          <img src="IMG_8357.JPG" alt="François Perdriau performing live on double bass">
+        </div>
+
+        <div class="musician-content">
+          <h2>Musician</h2>
+
+          <p>
+            François Perdriau is a multi-instrumentalist with a
+            long-standing practice in traditional jazz, early swing and acoustic
+            music. His work as a performer is rooted in collective sound,
+            rhythm, phrasing and the energy of live performance.
+          </p>
+
+          <p>
+            He performs with The Jungle Jazz Band and the Syncopation Society
+            Orchestra, and develops recording and production work through
+            Nadanadi Studio in Berlin.
+          </p>
+
+          <div class="project-links">
+            <a href="https://www.thejunglejazzband.com" target="_blank" rel="noopener">
+              The Jungle Jazz Band
+            </a>
+
+            <a href="https://syncopation.de/bands/syncopation-society-orchestra/" target="_blank" rel="noopener">
+              Syncopation Society Orchestra
+            </a>
+
+            <a href="https://www.nadanadi.de" target="_blank" rel="noopener">
+              Nadanadi Studio
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED COMPOSITIONS -->
+
+  <section class="compositions-section">
+    <div class="home-container">
+
+      <div class="section-header">
+        <h2>Selected Compositions</h2>
+        <p>
+          A selection of original songs, collaborative songwriting projects,
+          narrative themes and image-inspired compositions.
+        </p>
+      </div>
+
+      <div class="compositions-grid">
+
+        <article class="composition-card featured">
+          <h3>Lilly & Elisabeth</h3>
+          <div class="composition-meta">Main Theme · 2026</div>
+          <p>
+            Original theme composed for the audiobook and live performance
+            project <em>Lilly & Elisabeth</em>
+          </p>
+          <div class="soundcloud-player">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no"
+              allow="autoplay; encrypted-media"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2338076072&color=%23846c54&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false">
+            </iframe>
+          </div>
+        </article>
+          </div>
+        <article class="composition-card">
+          <h3>Acoustic Narrative</h3>
+          <div class="composition-meta">Music for Image Playlist · 2026</div> 
+          <p>
+            A collection of image-inspired compositions exploring narrative,
+            emotion and acoustic textures.
+          </p>
+
+  <div class="soundcloud-player playlist-player">
+    <iframe
+      width="100%"
+      height="450"
+      scrolling="no"
+      frameborder="no"
+      allow="autoplay; encrypted-media"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2190274829&color=%23bcb4b4&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false">
+    </iframe>
+  </div>
+
+</article>
+
+      </div>
+        <article class="composition-card">
+          <h3>Soir d'Été</h3>
+          <div class="composition-meta">Antoine Villoutreix · 2025</div>
+          <p>
+            Lyrics by Antoine Villoutreix. Music by François Perdriau.
+            Produced by Super Antena Tropical.
+          </p>
+          <div class="soundcloud-player">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no"
+              allow="autoplay; encrypted-media"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2088783066&color=%23bcb4b4&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false">
+            </iframe>
+          </div>
+        </article>
+
+        <article class="composition-card">
+          <h3>Mada</h3>
+          <div class="composition-meta">Antoine Villoutreix · 2024</div>
+          <p>
+            Lyrics by Antoine Villoutreix. Music by François Perdriau.
+            Produced by Super Antena Tropical.
+          </p>
+          <div class="soundcloud-player">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no"
+              allow="autoplay; encrypted-media"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1829449263&color=%23bcb4b4&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false">
+            </iframe>
+          </div>
+        </article>
+
+        <article class="composition-card">
+          <h3>Le Jardin Municipal</h3>
+          <div class="composition-meta">Antoine Villoutreix · 2021</div>
+          <p>
+            Lyrics by Antoine Villoutreix. Music by François Perdriau.
+          </p>
+          <div class="soundcloud-player">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no"
+              allow="autoplay; encrypted-media"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A968524981&color=%23bcb4b4&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false">
+            </iframe>
+          </div>
+        </article>
+
+       <div class="composition-card">
+
+  <h3>Meschiya Lake & The New Movement</h3>
+
+  <div class="composition-meta">
+    Composer · Arranger · Producer · 2021
+  </div>
+
+  <p>
+    Two original compositions and arrangements written for
+    Meschiya Lake & The New Movement.
+
+  <div class="soundcloud-player">
+
+    <iframe
+      width="100%"
+      height="250"
+      scrolling="no"
+      frameborder="no"
+      allow="autoplay; encrypted-media"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2251951496&color=%23bcb4b4&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
+    </iframe>
+  </div>
+ </div>
+  </div>
+ <a href="index.html" class="back-link">← Back to Main Page</a>
+</div>
+    </div>
+  </section>
+
+</body>
+</html>
